@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>Product</title>
+
+<link rel="stylesheet" type="text/css" href="/template/3205.css">
+<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/ui-lightness/jquery-ui.min.css" rel="stylesheet" />
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<!-- documented at http://digitalbush.com/projects/masked-input-plugin/ -->
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.3.1/jquery.maskedinput.min.js"></script>
+<script src="template/jquery-cookie-master/src/jquery.cookie.js"></script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+
+
+</head>
+
+<body>
+  <h1>Intro to jQuery - People List</h1>
+  
+  <ul id='people'>
+    <li>
+      <form id="userform">
+        
+        <p class="formError">
+          Oops! There was an issue with this form. Please fix the errors listed below.
+        </p>
+        
+        <p class="formSuccess">
+          No errors. The form was submitted successfully.
+        </p>
+        
+        <label class='nameLabel'>
+          
+          
+          <span class='labelText'>
+            Name: 
+          </span>
+          <input id="nameinput" name='name' value='Jack Sparrow' />
+          
+          <span class='fieldError'>
+            Name is Required
+          </span>
+          
+          
+        </label>
+        <label class='birthLabel'>
+          
+          
+          <span class='labelText'>
+            Birthdate: 
+          </span>
+          <input id="birthdateinput" name='birth' value='08/15/1976' />
+          
+          <span class='fieldError'>
+            Birthdate is not valid
+          </span>
+          
+          
+        </label>
+        <label class='socialSecLabel'>
+          
+          
+          <span class='labelText'>
+            ID #: 
+          </span>
+          <input id="idinput" name='socialSec' />
+          
+          <span class='fieldError'>
+            Social Security is not valid
+          </span>
+          
+          
+        </label>
+        
+        <div class='actions'>
+          <button class='btn btn-primary' type='submit'>Submit</button>
+        </div>
+        
+      </form>
+    </li>
+  </ul>
+
+ <!--  <ul id="list">test</ul> -->
+  
+</body>
+
+<script src="/template/3205.js"></script>
+
+</html>
+
+

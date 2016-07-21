@@ -1,0 +1,90 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{
+  font-family: Arial, Helvetica, san serif;
+}
+
+ul{
+  list-style: none;
+  font-family: Arial, Helvetica, san serif;
+}
+
+li{
+  width:800px;
+  font-family: Arial, Helvetica, san serif;
+}
+
+label{
+  clear:both;
+  display:block;
+  padding-bottom:10px;
+  font-family: Arial, Helvetica, san serif;
+}
+
+input{
+  border: 1px solid #ccc;
+  padding: 2px 5px;
+  width:60%;
+  font-family: Arial, Helvetica, san serif;
+}
+
+span{
+	font-family: Arial, Helvetica, san serif;
+}
+
+.labelText{
+  display: inline-block;
+  font-size:14px;
+  width:20%;
+}
+
+.actions{
+  padding-right:18%;
+  text-align: right;
+}
+
+
+/* default error styles */
+.formError{
+  background: #FFCCCC;
+  display: none;
+  padding: 5px 10px;
+} 
+
+.fieldError{
+  color: #f00;
+  display: none;
+  font-size:11px;
+}
+
+/* error state styles */
+form.hasError .formError{
+  display: block; /* show the error */
+}
+
+label.hasError .fieldError{
+  display: inline; /* show the error */
+}
+
+label.hasError .labelText{
+  color: #f00;
+}
+
+label.hasError input{
+  border: 1px solid #f00;
+}
+
+
+/* default success styles */
+.formSuccess{
+  background: #CCFFCC;
+  display: none;
+  padding: 5px 10px;
+}
+
+/* success state styles */
+form.hasSuccess .formSuccess{
+  display: block;
+}
+
